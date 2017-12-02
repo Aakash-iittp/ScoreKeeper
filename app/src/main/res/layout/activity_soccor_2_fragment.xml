@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/background_colour">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blogspot.physicsforsmartbrains.www.scorekeeper.soccor_2_fragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Tap team to reset name"
+        android:textSize="10dp" />
+
+    <LinearLayout
+        android:id="@+id/soccer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/soccor_pla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:onClick="soccor_pla"
+                android:padding="16dp"
+                android:text="Team A"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="56sp" />
+
+
+            <Button
+                android:id="@+id/point1teamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+1 Points"
+                android:layout_marginBottom="8dp"
+                android:background="@color/bt1_col"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"/>
+            <Button
+                android:id="@+id/s_undo_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Undo"
+                android:layout_marginBottom="8dp"
+                android:background="@color/bt2_col"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="#757575" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/soccor_plb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:onClick="soccor_plb"
+                android:padding="16dp"
+                android:text="Team B"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="56sp" />
+
+
+            <Button
+                android:id="@+id/point1teamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+1 Points"
+                android:layout_marginBottom="8dp"
+                android:background="@color/bt1_col"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp" />
+            <Button
+                android:id="@+id/s_undo_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Undo"
+                android:layout_marginBottom="8dp"
+                android:background="@color/bt2_col"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/soc_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/soccer_layout"
+        android:layout_centerInParent="true"
+        android:layout_margin="32dp"
+        android:onClick="reset"
+        android:text="Reset"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>
+</ScrollView>

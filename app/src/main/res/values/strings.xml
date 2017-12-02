@@ -1,0 +1,292 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">App version 1.0</string>
+    <string name="bad_scoring_sys">A match consists of the best of 3 games of 21 points.
+Every time there is a serve – there is a point scored.
+The side winning a rally adds a point to its score.
+At 20 all, the side which gains a 2 point lead first, wins that game.
+At 29 all, the side scoring the 30th point, wins that game.
+The side winning a game serves first in the next game</string>
+    <string name="bad_score_2">When the leading score reaches 11 points, players have a 60 second interval.
+A 2 minute interval between each game is allowed.
+In the third game, players change ends when the leading score reaches 11 points.</string>
+
+    <string name="bad_singles">At the beginning of the game (0-0) and when the server’s score is even, the server serves from the right service court. When the server’s score is odd, the server serves from the left service court.
+If the server wins a rally, the server scores a point and then serves again from the alternate service court.
+If the receiver wins a rally, the receiver scores a point and becomes the new server. They serve from the appropriate service court – left if their score is odd, and right if it is even.</string>
+
+    <string name="bad_doubles">A side has only one ‘set’.
+The service passes consecutively to the players as shown in the diagram.
+At the beginning of the game and when the score is even, the server serves from the right service court. When it is odd, the server serves from the left court.
+If the serving side wins a rally, the serving side scores a point and the same server serves again from the alternate service court.
+If the receiving side wins a rally, the receiving side scores a point. The receiving side becomes the new serving side.
+The players do not change their respective service courts until they win a point when their side is serving.</string>
+
+    <string name="rules">1 point To the wrestler who applies a correct hold while standing on the mat or in the parterre position with three points of contact but who does not secure control by passing behind in FS wrestling. To the wrestler who is prevented from completing a hold because his opponent is maintaining an
+irregular hold, but who finally succeeds in completing the hold in FS. To the attacking wrestler whose opponent flees the hold, the mat, refuses to start, commits illegal actions or acts of brutality in FS. To the wrestler whose opponent goes in the protection zone with one entire foot (in standing position)
+without executing a hold. Clarification for stepping out in standing wrestling for both style: When the attacking wrestler is the first to step into the protection area in the commission of a hold, the following may occur: If the wrestler completes the hold successfully in a continuous action, he shall be awarded
+the requisite points - 1, 2, 4 or 5 points. If the wrestler is unable to complete the hold successfully, after stopping the action the referee shall award his opponent 1 point. If the wrestler lifts and controls his opponent and he is unable to complete the hold in a continuous action, the referee shall stop the bout but not award his opponent 1 point.
+NB: When a wrestler deliberately pushes his opponent into the protection area with no meaningful action, he shall no longer be awarded 1 point. If he does it second time he will be penalized caution (O) and 2 points to opponent in GR, 1 point in FS.
+All the stops of bout by injury without bleeding or any visible injury are penalised by 1 point to the opponent. To the wrestler whose opponent requested a challenge if initial decision is confirmed. To the opponent of a wrestler designated as passive who fails to score points during a 30 second activity
+period in Freestyle wrestling. To the wrestler whose opponent, either top or bottom wrestler, refuses correct parterre starting position after a first friendly warning in FS. Reversal (counter attack by dominated wrestler in parterre position and passing behind)2 points. To the wrestler who overcomes and then controls his opponent by passing behind (three points of contact: two arms and one knee or two knees and one arm or head). To the wrestler who applies a correct hold while standing on the mat or in the parterre position with three points of contact but who does not secure control by passing behind in GR wrestling. To the wrestler who executes a hold that places his opponent s back at an angle of less than 90 degrees, including when his opponent is on one or two outstretched arms. To the wrestler who is prevented from completing a hold because his opponent is maintaining an irregular hold, but who finally succeeds in completing the hold in GR. To the attacking wrestler whose opponent flees the hold, the mat, refuses to start, commits illegal actions or acts of brutality in GR. To the wrestler whose opponent, either top or bottom wrestler, refuses correct parterre starting
+position after a first friendly warning in GR. To the attacking wrestler whose opponent rolls onto his shoulders. To the attacking wrestler whose opponent flees the hold out-of-bounds and lands in a position of danger. To the attacking wrestler whose opponent commits an illegal hold that hinders the execution of an engaged hold or a fall. To the wrestler who blocks his opponent in the execution of a hold from the standing position, in a position of danger. To the wrestler who executes grand amplitude hold and secures control, but does not place the opponent in a direct and immediate danger position in Freestyle wrestling.4 points To the Greco-Roman wrestler performing a hold in a standing position, which brings his opponent into a danger position by direct projection over a short amplitude. To the Freestyle wrestler who brings his opponent into a direct danger position by projection and demonstrates control. Short amplitude is not required in Freestyle.
+For any hold executed by raising a wrestler from the ground, over a short amplitude, even if one or both of the attacking wrestler s knees are on the ground. To the Greco-Roman wrestler who executes grand amplitude hold which does not place the opponent in a direct and immediate danger position. NB. If, in performing a hold, the defending wrestler maintains contact with the mat with one of his hands, but is immediately placed in a danger position, the attacking wrestler will receive 4 points. 5 points (in Greco Roman Style) All grand amplitude throws executed in a standing position which bring the defending wrestler to a direct and immediate danger position. The hold executed by a wrestler in the parterre position who completely lifts his opponent off the ground with the execution of a high amplitude throw which projects the opponent into a direct and immediate danger position</string>
+
+
+    <string name="teams">Two teams of maximum 12 players, with a maximum of five players of each team on the court at any time.
+
+Teams may make as many substitutions as they like.</string>
+    <string name="objective">The objective of the game is to put the ball in the opposing team’s basket.
+
+The team with the most points at the end of the game wins.</string>
+    <string name="duration">The game consists of four periods of 10 minutes.
+
+If the scores are tied, overtime periods of five minutes will be played until one team has more points than the other (at the end of the 5-minute period)</string>
+
+    <string name="scoring">A basket scored from near the basket (inside the three-point arc) is worth two points.
+
+A basket scored from far (beyond the three-point arc) is worth three points.
+
+A basket scored from the free-throw line is worth one point.</string>
+    <string name="moving_the_ball">The ball may either be passed from one player to another, or dribbled by a player from one point to another (bounced while walking or running).
+
+Before passing or shooting the ball, a player may take two steps (without dribbling).
+
+Once a player has stopped dribbling, he may not start to dribble again.
+
+Once the team in possession of the ball has passed the half-court line, it may cross back over the line with the ball.</string>
+
+    <string name="shot_clock">When a team gains possession of the ball, they have a maximum of 24 seconds to attempt a shot.
+
+Additionally, offensive players may not remain within the restricted area (key) for more than three consecutive seconds.</string>
+
+    <string name="fouls">A personal foul occurs when there is illegal contact between two opponents. A player who makes more than five personal fouls is excluded from the game.
+
+A foul made on a player attempting a shot results in the awarding of the same number of free-throws as those of the shot taken (two from inside the arc, three from outside). If a player is fouled but makes the attempted shot, the shot counts and an additional free-throw will be awarded.
+
+Once a team has made four fouls in a period, each additional foul (on a player not attempting a shot) will result in the automatic awarding of two free-throws.</string>
+
+
+    <string name="tt_table">The upper surface of the table, known as the playing surface, shall be rectangular, 2.74m long and 1.525m wide, and shall lie in a horizontal plane 76cm above the floor. The playing surface shall not include the vertical sides of the tabletop. The playing surface may be of any material and shall yield a uniform bounce of about 23cm when a standard ball is dropped on to it from a height of 30cm. The playing surface shall be uniformly dark coloured and matte, but with a white side line, 2cm wide, along each 2.74m edge and a white end line, 2cm wide, along each 1.525m edge. The playing surface shall be divided into 2 equal courts by a vertical net running parallel with the end lines, and shall be continuous over the whole area of each court.  For doubles, each court shall be divided into 2 equal half-courts by a white centre line, 3mm wide, running parallel with the side lines; the centre line shall be regarded as part of each right half-court. </string>
+
+    <string name="tt_net">The net assembly shall consist of the net, its suspension and the supporting posts, including the clamps attaching them to the table. The net shall be suspended by a cord attached at each end to an upright post 15.25cm high, the outside limits of the post being 15.25cm outside the side line. The top of the net, along its whole length, shall be 15.25cm above the playing surface.  The bottom of the net, along its whole length, shall be as close as possible to the playing surface and the ends of the net shall be attached to the supporting posts from top to bottom. </string>
+
+    <string name="tt_ball">The ball shall be spherical, with a diameter of 40mm. The ball shall weigh 2.7g. The ball shall be made of celluloid or similar plastics material and shall be white or orange, and matt.</string>
+
+    <string name="tt_racket">The racket can be any size, shape or weight but the blade shall be flat and rigid. The surface covering material shall be matt and bright red on one side and black on the other. At least 85% of the blade thickness shall be of natural wood.</string>
+
+    <string name="tt_definition">- A rally is the period which the ball is in play.             
+
+- A let is a rally of which the result is not scored.     
+
+- A point is a rally of which the result is scored.   
+
+- The server is the player due to strike the ball first in the rally.
+
+- The receiver is the player due to strike the ball second in a rally.
+
+- The ball shall be regarded as passing over or around the net assembly if it passes anywhere other then between the net and the net post or between the net and the playing surface. </string>
+
+    <string name="tt_serve_return_order">Service shall start with the ball resting freely on the open palm of the server\'s stationary free hand. The server shall then project the ball near vertically upwards, without imparting spin, so that it rises at least 16cm after leaving the palm of the free hand and then falls without touching anything before being struck. As the ball is falling the server shall strike it so that it touches first his or her court and then, after passing over or around the net assembly, touches directly the receiver\'s court; in doubles, the ball shall touch successively the right half court of server and receiver. From the start of service until it is struck, the ball shall be above the level of the playing surface and behind the server\'s end line, and it shall not be hidden from the receiver by the server or his or her doubles partner or by anything they wear or carry. As soon as the ball has been projected, the server’s free arm and hand shall be removed from the space between the ball and the net.
+
+The space between the ball and the net is defined by the ball, the net and its indefinite upward extension. It is the responsibility of the player to serve so that the umpire or the assistant umpire can be satisfied that he or she complies with the requirements of the Laws, and either may decide that a service is incorrect. If either the umpire or the assistant umpire is not sure about the legality of a service he or she may, on the first occasion in a match, interrupt play and warn the server; but any subsequent service by that player or his or her doubles partner which is not clearly legal shall be considered incorrect. Exceptionally, the umpire may relax the requirements for a correct service where he or she is satisfied that compliance is prevented by physical disability. 
+
+
+The Return
+The ball, having been served or returned shall be struck so that it passes over or around the net assembly and touches the opponents court, either directly or after touching the net assembly.
+
+ 
+
+
+The Order of Play
+In singles the server shall make a first service and the receiver shall make a return and thereafter alternately shall each make a return.
+
+In doubles, the server shall first make a service, the receiver shall then make a return, the partner of the server shall then make a return, the partner of the receiver shall then make a return and thereafter each player in turn in that sequence shall make a return.</string>
+
+
+    <string name="tt_point">Unless the rally is a let, a player shall score a point if an opponent fails to make a correct service;if an opponent fails to make a correct return;
+if, after he or she has made a service or a return, the ball touches anything other than the net assembly before being struck by an opponent; if the ball passes over his or her court or beyond his or her end line without touching his or her court, after being struck by an opponent;
+if an opponent obstructs the ball; if an opponent deliberately strikes the ball twice in succession; if an opponent strikes the ball with a side of the racket blade whose surface does not comply with the requirements of 2.4.3, 2.4.4 and 2.4.5;
+if an opponent, or anything an opponent wears or carries, moves the playing surface; if an opponent, or anything an opponent wears or carries, touches the net assembly;
+if an opponent\'s free hand touches the playing surface; if a doubles opponent strikes the ball out of the sequence established by the first server and first receiver;
+as provided under the expedite system (2.15.4). if both players or pairs are in a wheelchair due to a physical disability and his or her opponent does not maintain a minimum contact with the seat or cushion(s), with the back of the thigh, when the ball is struck; his or her opponent touches the table with either hand before striking the ball; his or her opponent\'s footrest or foot touches the floor during play.</string>
+    <string name="tt_game">A Game
+A game shall be won by a player or pair first scoring 11 points unless both players or pairs score 10 points, when the game shall be won by the first player or pair subsequently gaining a lead of 2 points. A match shall consist of the best of any odd number of games</string>
+
+    <!--below strings are for main sports activity-->
+    <string name="main_title">Benefits of Sports</string>
+    <string name="main_title_content">Physical exercise is good for mind, body and spirit. Furthermore, team sports are good for learning accountability, dedication, and leadership, among many other traits. Putting it all together by playing a sport is a winning combination.</string>
+    <string name="main_t1">Many athletes do better academically.</string>
+    <string name="main_c1">Playing a sport requires a lot of time and energy. Some may think this would distract student-athletes from schoolwork. However, the opposite is true. Sports require memorization, repetition and learning — skillsets that are directly relevant to classwork. Also, the determination and goal-setting skills sports require can be transferred to the classroom.</string>
+    <string name="main_t2">Sports teach teamwork and help achieve goals.</string>
+    <string name="main_c2">Fighting for a common goal with a host of other players, coaches, managers and community members teaches you how to build a collective team synergy and effectively communicate the best way to solve problems en route to a victory. This will be very helpful in life when encountering problems at work, at home, or in any arena.</string>
+    <string name="main_t3">Sports offer many health benefits, some less obvious.</string>
+    <string name="main_c3">Clearly, sports will improve your fitness and weight goals. However, they also encourage healthy decisions such as not smoking or drinking and offer hidden health benefits such as a lower chance of getting osteoporosis or breast cancer later in life. Also, a team counting on you to show up and work hard is plenty of motivation for you to get to the gym day in and day out.</string>
+    <string name="main_t4">Sports boost self-esteem. </string>
+    <string name="main_c4">Watching your hard work pay off and achieving your dreams brings about tons of self-confidence. If you can achieve something in a sport or with a fitness goal, then you know you can achieve any other goal you set. This is a very rewarding and exciting process.</string>
+    <string name="main_t5">Playing a sport cuts down on pressure and stress.</string>
+    <string name="main_c5">Exercising is a natural way to loosen up and let go of stress. Also, you will most likely make many new friends on the team who can be there for you as a support system. When you find you are having a lot of stress, you can call up teammates and head to the gym to talk it out and play it out.</string>
+
+    <!--below strings are for football activity  -->
+    <string name="foot_t1">The Method of Scoring</string>
+    <string name="foot_c1">A goal is scored when the whole of the ball passes over the goal line, between
+the goalposts and under the crossbar, provided that no infringement of the
+Laws of the Game has been committed previously by the team scoring the goal.</string>
+    <string name="foot_t2">Winning Team</string>
+    <string name="foot_c2">The team scoring the greater number of goals during a match is the winner.
+If both teams score an equal number of goals, or if no goals are scored, the match is drawn.</string>
+    <string name="foot_t3">Competition rules</string>
+    <string name="foot_c3">When competition rules require there to be a winning team after a match
+or home-and-away tie, the only permitted procedures for determining the
+winning team are those approved by the International F.A. Board, namely:away goals rule, extra time, kicks from the penalty mark.</string>
+    <string name="foot_t4">Goal-line technology (GLT)</string>
+    <string name="foot_c4">GLT systems may be used for the purpose of verifying whether a goal has been
+scored to support the referee\’s decision. The use of GLT must be stipulated in
+the respective competition rules.</string>
+    <string name="foot_t5">Offside</string>
+    <string name="foot_c5">It is not an offence in itself to be in an offside position.
+A player is in an offside position if:
+\n• he is nearer to his opponents’ goal line than both the ball and the second-last opponent
+A player is not in an offside position if:
+\n• he is in his own half of the field of play or
+\n• he is level with the second-last opponent or
+\n• he is level with the last two opponents
+\n\n
+Offence
+\n\n
+A player in an offside position is only penalised if, at the moment the ball
+touches or is played by one of his team, he is, in the opinion of the referee,
+involved in active play by:
+\n• interfering with play or
+\n• interfering with an opponent or
+\n• gaining an advantage by being in that position
+\n\n
+No offence
+\n\n
+There is no offside offence if a player receives the ball directly from:
+\n• a goal kick
+\n• a throw-in
+\n• a corner kick
+\n\n
+Infringements and sanctions
+\n\n
+In the event of an offside offence, the referee awards an indirect free kick
+to the opposing team to be taken from the place where the infringement
+occurred (see Position of free kick).</string>
+    <string name="foot_t6">Fouls and Misconduct</string>
+    <string name="foot_c6">Fouls and misconduct are penalised as follows:
+\n\n
+Direct free kick
+\n\n
+A direct free kick is awarded to the opposing team if a player commits any
+of the following seven offences in a manner considered by the referee to be
+careless, reckless or using excessive force:
+\n• kicks or attempts to kick an opponent
+\n• trips or attempts to trip an opponent
+\n• jumps at an opponent
+\n• charges an opponent
+\n• strikes or attempts to strike an opponent
+\n• pushes an opponent
+\n• tackles an opponent
+\n
+A direct free kick is also awarded to the opposing team if a player commits any
+of the following three offences:
+\n• holds an opponent
+\n• spits at an opponent
+\n• handles the ball deliberately (except for the goalkeeper within his own
+penalty area)
+A direct free kick is taken from the place where the offence occurred
+(see Position of free kick).
+\n\n
+Penalty kick
+\n\n
+A penalty kick is awarded if any of the above ten offences is committed by
+a player inside his own penalty area, irrespective of the position of the ball,
+provided it is in play.
+\n\n
+Indirect free kick
+\n\n
+An indirect free kick is awarded to the opposing team if a goalkeeper, inside his
+own penalty area, commits any of the following four offences:
+\n• controls the ball with his hands for more than six seconds before releasing
+it from his possession
+\n• touches the ball again with his hands after he has released it from his
+possession and before it has touched another player
+\n• touches the ball with his hands after it has been deliberately kicked to him
+by a team-mate
+\n• touches the ball with his hands after he has received it directly from a
+throw-in taken by a team-mate
+An indirect free kick is also awarded to the opposing team if, in the opinion of
+the referee, a player:
+\n• plays in a dangerous manner
+\n• impedes the progress of an opponent
+\n• prevents the goalkeeper from releasing the ball from his hands
+\n• commits any other offence, not previously mentioned in Law 12, for which
+play is stopped to caution or send off a player
+The indirect free kick is taken from the place where the offence occurred
+(see Position of free kick).
+\n\n
+Disciplinary sanctions
+\n\n
+The yellow card is used to communicate that a player, substitute or substituted
+player has been cautioned.
+The red card is used to communicate that a player, substitute or substituted
+player has been sent off.
+Only a player, substitute or substituted player may be shown the red or yellow
+card.
+The referee has the authority to take disciplinary sanctions from the moment
+he enters the field of play until he leaves the field of play after the final whistle.
+A player who commits a cautionable or sending-off offence, either on or off
+the field of play, whether directed towards an opponent, a team-mate, the
+referee, an assistant referee or any other person, is disciplined according to the
+nature of the offence committed.
+\n\n
+Cautionable offences
+\n\n
+A player is cautioned and shown the yellow card if he commits any of the
+following seven offences:
+\n• unsporting behaviour
+\n• dissent by word or action
+\n• persistent infringement of the Laws of the Game
+\n• delaying the restart of play
+\n• failure to respect the required distance when play is restarted with a corner
+kick, free kick or throw-in
+\n• entering or re-entering the field of play without the referee’s permission
+\n• deliberately leaving the field of play without the referee’s permission
+\n
+A substitute or substituted player is cautioned if he commits any of the
+following three offences:
+\n• unsporting behaviour
+\n• dissent by word or action
+\n• delaying the restart of play
+\n\n
+Sending-off offences
+\n\n
+A player, substitute or substituted player is sent off if he commits any of the
+following seven offences:
+\n• serious foul play
+\n• violent conduct
+\n• spitting at an opponent or any other person
+\n• denying the opposing team a goal or an obvious goalscoring opportunity
+by deliberately handling the ball (this does not apply to a goalkeeper within
+his own penalty area)
+\n• denying an obvious goalscoring opportunity to an opponent moving
+towards the player’s goal by an offence punishable by a free kick or a
+penalty kick
+\n• using offensive, insulting or abusive language and/or gestures
+\n• receiving a second caution in the same match
+A player, substitute or substituted player who has been sent off must leave the
+vicinity of the field of play and the technical area."</string>
+
+
+    <string name="about_us">App designed and developed by
+        \n\nAakash Yadav \nIndian Institute of TechnologyTirupati – Renigunta Road,
+Settipalli Post,
+Tirupati – 517 506,
+Chittoor District, A.P.</string>
+    <string name="search_title">Search</string>
+</resources>

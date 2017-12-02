@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_basketball"
+            android:icon="@drawable/basketball"
+            android:title="Basketball" />
+        <item
+            android:id="@+id/nav_badminton"
+            android:icon="@drawable/badminton"
+            android:title="Badminton" />
+        <item
+            android:id="@+id/nav_wrestling"
+            android:icon="@drawable/wrestling"
+            android:title="Wrestling" />
+        <item
+            android:id="@+id/nav_tabletennis"
+            android:icon="@drawable/tt"
+            android:title="Table Tennis" />
+        <item
+            android:id="@+id/nav_soccor"
+            android:icon="@drawable/football"
+            android:title="Soccer" />
+        <item
+            android:id="@+id/nav_cricket"
+            android:icon="@drawable/cric_png"
+            android:title="Cricket" />
+    </group>
+
+    <item android:title="More">
+        <menu>
+            <item
+                android:id="@+id/nav_steps"
+                android:icon="@drawable/foot"
+                android:title="My Steps" />
+            <item
+                android:id="@+id/nav_history"
+                android:icon="@drawable/ic_action_search"
+                android:title="History" />
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_aboutus"
+                android:icon="@drawable/ic_supervisor_account_black_18dp"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Suggestions" />
+        </menu>
+    </item>
+
+</menu>
