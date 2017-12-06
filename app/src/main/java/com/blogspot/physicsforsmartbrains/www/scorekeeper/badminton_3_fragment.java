@@ -1,7 +1,9 @@
 package com.blogspot.physicsforsmartbrains.www.scorekeeper;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -16,101 +18,53 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import static android.R.attr.max;
-import static com.blogspot.physicsforsmartbrains.www.scorekeeper.R.id.layout_reset_click;
-import static com.blogspot.physicsforsmartbrains.www.scorekeeper.R.id.timer;
+import static com.blogspot.physicsforsmartbrains.www.scorekeeper.R.id.reset;
+import static com.blogspot.physicsforsmartbrains.www.scorekeeper.R.id.timeView;
+import static com.blogspot.physicsforsmartbrains.www.scorekeeper.R.id.start;
+
 
 public class badminton_3_fragment extends Fragment {
     private String m_Text = "";
     private String m_min = "";
-    public String seconds;
-    public int minutes;
+    private int seconds;
+    private boolean running;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v= inflater.inflate(R.layout.activity_badminton_3_fragment, container, false);
 
+
         Button buttona = (Button) v.findViewById(R.id.start);
         buttona.setOnClickListener(badButtonA);
-
-        LinearLayout timert = (LinearLayout) v.findViewById(layout_reset_click);
+        Button buttonb = (Button) v.findViewById(R.id.stop);
+        buttonb.setOnClickListener(badButtonB);
+        Button buttonc = (Button) v.findViewById(R.id.reset);
+        buttonc.setOnClickListener(badButtonC);
+        TextView timert = (TextView) v.findViewById(timeView);
         timert.setOnClickListener(timertr);
         return v;
     }
 
-    public void timertrak(long t){
-
-        new CountDownTimer(t, 1000) {
-
-            final TextView text1 = (TextView) getView().findViewById(timer);
-
-            public void onTick(long millisUntilFinished) {
-                text1.setText("" + millisUntilFinished / 1000);
-            }
-
-            public void onFinish() {
-                text1.setText("" + 0);
-                minute_trak(minutes*60000);
-            }
-        }.start();
-    }
-
-    public void minute_trak(long t){
-        new CountDownTimer(t, 60000) {
-
-            final TextView text1=(TextView)getView().findViewById(R.id.miutes);
-            public void onTick(long millisUntilFinished) {
-                text1.setText("" + millisUntilFinished / 60000);
-                //for seconds
-                new CountDownTimer(60000, 1000) {
-
-                    final TextView text2 = (TextView) getView().findViewById(timer);
-
-                    public void onTick(long millisUntilFinished) {
-                        text2.setText("" + millisUntilFinished / 1000);
-                    }
-
-                    public void onFinish() {
-                        text2.setText("" + 0);
-                    }
-                }.start();
-            }
-            public void onFinish() {
-                text1.setText(""+0);
-                new CountDownTimer(60000, 1000) {
-
-                    final TextView text2 = (TextView) getView().findViewById(timer);
-
-                    public void onTick(long millisUntilFinished) {
-                        text2.setText("" + millisUntilFinished / 1000);
-                    }
-
-                    public void onFinish() {
-                        text2.setText("" + 0);
-                    }
-                }.start();
-            }
-        }.start();
-    }
-
+    private int i=0;
     private View.OnClickListener badButtonA = new View.OnClickListener() {
         public void onClick(View view) {
-            TextView text = (TextView)getView().findViewById(timer);
-            String value = text.getText().toString();
-            int l = Integer.parseInt(value);
+           running=true;
 
-            TextView tex = (TextView)getView().findViewById(R.id.miutes);
-            String valu = tex.getText().toString();
-            int ll =Integer.parseInt(valu);
+           if(i==0){runTimer();}
+            i++;
 
-            //to get second less thann 60 its remainder
-            int s;
-            s=(l%60);
-            s=s*1000;
-            timertrak(s);
-
-            int m;
-            m=(l/60)+ll;
-            minutes=m;
+        }
+    };
+    private View.OnClickListener badButtonB = new View.OnClickListener() {
+        public void onClick(View view) {
+            running= false;
+        }
+    };
+    private View.OnClickListener badButtonC = new View.OnClickListener() {
+        public void onClick(View view) {
+            running= false;
+            seconds=0;
+//            i=0;
         }
     };
 
@@ -144,14 +98,17 @@ public class badminton_3_fragment extends Fragment {
                 public void onClick(DialogInterface dialog, int which) {
                     //seconds
                     m_Text = inpu.getText().toString();
-                    TextView scoreView = (TextView) getView().findViewById(timer);
-                    scoreView.setText(String.valueOf(m_Text));
-                    seconds=m_Text;
+//                    TextView scoreView = (TextView) getView().findViewById(timer);
+//                    scoreView.setText(String.valueOf(m_Text));
+//                    seconds=m_Text;
 
                     //minutes
                     m_min = input.getText().toString();
-                    TextView scoreVie = (TextView) getView().findViewById(R.id.miutes);
-                    scoreVie.setText(String.valueOf(m_min));
+//                    TextView scoreVie = (TextView) getView().findViewById(R.id.miutes);
+//                    scoreVie.setText(String.valueOf(m_min));
+                    int result = Integer.parseInt(m_Text);
+                    int resultm = Integer.parseInt(m_min);
+                    seconds= result + (resultm*60);
                 }
             });
             builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -165,5 +122,24 @@ public class badminton_3_fragment extends Fragment {
         }
 
     };
+
+    private void runTimer(){
+        final TextView textView = (TextView) getView().findViewById(R.id.timeView);
+        final Handler handler = new Handler();
+        handler.post(new Runnable(){
+            @Override
+            public void run() {
+                int hours = seconds / 3600;
+                int minutes = (seconds % 3600) / 60;
+                int secs = seconds % 60;
+                String time = String.format("%02d:%02d:%02d", hours, minutes, secs);
+                textView.setText(time);
+                if (running && seconds>0) {
+                    seconds--;
+                }
+                handler.postDelayed(this,1000);
+            }
+        });
+    }
 
 }
