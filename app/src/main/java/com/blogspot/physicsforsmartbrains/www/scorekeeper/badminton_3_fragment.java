@@ -18,9 +18,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import static android.R.attr.max;
-import static com.blogspot.physicsforsmartbrains.www.scorekeeper.R.id.reset;
 import static com.blogspot.physicsforsmartbrains.www.scorekeeper.R.id.timeView;
-import static com.blogspot.physicsforsmartbrains.www.scorekeeper.R.id.start;
 
 
 public class badminton_3_fragment extends Fragment {
